@@ -1,0 +1,26 @@
+.color1 { color: salmon;}
+
+.color2 { color: lightgreen;}
+
+.code { color: blue;}
+
+.error{color: red;}
+
+.Student table {
+    /* border : 1px solid green; */
+    width : 300px;
+    margin-bottom : 10px;
+    border-collapse: collapse;
+}
+
+.Student table td,.Student table th {
+    text-align : left;
+    border : 1px solid violet;
+    padding: 5px 10px;
+
+}
+
+.Student table th {
+    width : 100px;
+}
+
