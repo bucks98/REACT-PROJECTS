@@ -25,7 +25,7 @@ const handleClick = ()=> {
     <>
   <Header />
 
-   <Student Name=" Bagavath" Age={27} isMarried={false}/> 
+  <Student Name=" Bagavath" Age={27} isMarried={false}/> 
   <Student Name=" Ram" Age={23} isMarried={false}/>
   <Student Name=" shyam" Age={25} isMarried={false}/>
   <Student />
@@ -35,16 +35,18 @@ const handleClick = ()=> {
     <p>This is a simple para 1</p>
     <p>This is a simple para 2</p>
     <p>This is a simple para 3</p>
+  </ChildComponenet>
 
-  </ChildComponenet>  
   <ArraySample items ={items}/>
+
     <OneOfSample  color = "maroon" />
+
     <MultiTypeComponent value="Hello"/>
     <MultiTypeComponent value={42}/>
     <MultiTypeComponent value= {false}/> 
 <div>
   <h2>Parent Component</h2>
-  <FunctionSample handleClick={handleClick} />
+  <FunctionSample handleClick={"handleClick"} />
 </div>
     </>
   )

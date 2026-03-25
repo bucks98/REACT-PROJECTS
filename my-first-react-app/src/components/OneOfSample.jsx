@@ -9,6 +9,4 @@ export const OneOfSample = (props) => {
     </div>
   )
 }
-OneOfSample.propTypes = {
-    color: PropTypes.oneOf(["red", "green", "blue"]).isRequired,
-};
+OneOfSample.propTypes = {color: PropTypes.oneOf(["red", "green", "blue"]).isRequired,};

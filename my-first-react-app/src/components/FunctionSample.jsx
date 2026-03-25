@@ -10,7 +10,4 @@ export const FunctionSample = (props) => {
   )
 }
 
-FunctionSample.PropTypes = {
-  handleClick: PropTypes.func.isRequired,
-  
-}
+FunctionSample.propTypes = {handleClick: PropTypes.func.isRequired,}
