@@ -10,7 +10,7 @@ const userdata =[{
     city: "Mumbai",
     description: "Full Stack Developer",
     skills: ["React", "Node.js", "MongoDB", "Express", "Javascript", "CSS", "Git"],
-    online: "2345",
+    online: true,
     profile: "images/priya.jpg"
     },{
     Name: "bagavath",
@@ -26,7 +26,7 @@ function User(props) {
     return <div className="card-container">
         <span className={props.online?"pro online":"pro offline"}>{props.online? "online" : "offline"}</span>
         <img src={props.profile} className="img" alt="user" />
-        <h3>{props.name}</h3>
+        <h3>{props.Name}</h3>
         <h3>{props.city}</h3>
         <p>{props.description}</p>
         <div className="buttons">
@@ -49,7 +49,7 @@ export const UserCard = () => {
     <>
     {userdata.map((user, index) => (
         <User key={index} 
-        name= {user.Name}
+        Name= {user.Name}
         city={user.city}
         description={user.description}
         online ={user.online}
@@ -61,7 +61,7 @@ export const UserCard = () => {
   )
 }
 User.propTypes ={
-    name: PropTypes.string.isRequired,
+    Name: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
     skills :PropTypes.arrayOf(PropTypes.string).isRequired,
