@@ -50,6 +50,7 @@ export const QrCode = () => {
         </div>
         <p className="footer">Designed by <a href="https://www.linkedin.com/in/bagavath-ravichandran-ba5b38321/">Bagavath</a></p>
     </div>
+    
   )
 }
 
