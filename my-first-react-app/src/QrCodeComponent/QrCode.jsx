@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 export const QrCode = () => {
     const [img, setImg] = useState("");
     const [loading ,setLoading] = useState(false);
@@ -20,6 +21,7 @@ export const QrCode = () => {
             setLoading(false);
         }
     }
+    
     function DownloadQr(){
         fetch(img)
         .then((response)=>response.blob())
@@ -35,6 +37,7 @@ export const QrCode = () => {
             console.error("Error downloading QR code",error);
         })
     }
+
   return (
     <div className="app-container">
         <h1>QR CODE GENERATOR</h1>
@@ -49,7 +52,7 @@ export const QrCode = () => {
             <button className="download-button" onClick={DownloadQr}>Download QR Code</button>
         </div>
         <p className="footer">Designed by <a href="https://www.linkedin.com/in/bagavath-ravichandran-ba5b38321/">Bagavath</a></p>
-    </div>
+    </div>  
     
   )
 }
